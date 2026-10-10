@@ -78,7 +78,7 @@ function Login({ onLogin }) {
                 `${API_URL}/api/auth/login`,
                 {
                     method: "POST",
-
+                    credentials: "include",
                     headers: {
                         "Content-Type": "application/json"
                     },
@@ -261,7 +261,7 @@ function Login({ onLogin }) {
                         HEADER
                     ================================== */}
 
-                    <div className="login-card-header">
+                    <div class="login-card-header">
 
                         <div className="mobile-login-logo">
                             🌱
